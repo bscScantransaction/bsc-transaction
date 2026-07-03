@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Details | BscScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .bsc-header {
+            background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .transaction-card {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Top Navigation -->
+    <nav class="bsc-header text-white py-3">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">B</div>
+                    <div class="ml-2">
+                        <span class="font-bold text-2xl">BscScan</span>
+                        <p class="text-xs -mt-1">A Scan Original</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="flex-1 max-w-xl mx-8">
+                <div class="relative">
+                    <input type="text"
+                           class="w-full bg-white/90 text-gray-900 px-4 py-3 rounded-full text-sm focus:outline-none"
+                           placeholder="Search by Address / Txn Hash / Block / Tol">
+                    <i class="fa-solid fa-magnifying-glass absolute right-4 top-3 text-gray-500"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="p-2 hover:bg-white/20 rounded-lg">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="max-w-4xl mx-auto px-4 py-6">
+        <!-- Title -->
+        <div class="flex items-center justify-between mb-6">
+            <h1 class="text-3xl font-semibold">Transaction Details</h1>
+            <div class="flex gap-2">
+                <button class="w-10 h-10 border border-gray-300 rounded-xl flex items-center justify-center hover:bg-gray-100">
+                    ←
+                </button>
+                <button class="w-10 h-10 border border-gray-300 rounded-xl flex items-center justify-center hover:bg-gray-100">
+                    →
+                </button>
+            </div>
+        </div>
+        <!-- Category Tabs -->
+        <div class="flex gap-2 mb-6">
+            <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium">Prediction</button>
+            <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium">Play</button>
+            <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium">Gaming</button>
+        </div>
+        <!-- Sponsored -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-4 mb-6 flex items-center gap-4">
+            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-2xl">🎮</div>
+            <div>
+                <p class="font-medium">Sponsored: <span class="text-green-600">BC.Game</span> - Top Crypto Game with BTC</p>
+                <p class="text-blue-600 text-sm">Dividends! <span class="font-semibold">Sign Up & Win Up to 5 BTC</span></p>
+            </div>
+        </div>
+        <!-- Overview Tabs -->
+        <div class="flex items-center gap-4 mb-6 border-b pb-4">
+            <button class="bg-blue-600 text-white px-8 py-2 rounded-2xl font-medium">Overview</button>
+            <button class="px-8 py-2 text-gray-600 hover:bg-gray-100 rounded-2xl">State</button>
+           
+            <div class="ml-auto flex items-center gap-3">
+                <button class="flex items-center gap-2 px-5 py-2 border border-gray-300 rounded-2xl text-sm">
+                    <i class="fa-solid fa-code"></i>
+                    <span>API</span>
+                </button>
+                <button class="flex items-center gap-2 px-5 py-2 border border-gray-300 rounded-2xl text-sm">
+                    <i class="fa-solid fa-list"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Transaction Action -->
+        <div class="bg-white border border-gray-200 rounded-3xl p-6 mb-6">
+            <div class="flex items-start gap-3">
+                <div class="text-3xl">⚡</div>
+                <div>
+                    <p class="uppercase text-xs tracking-widest font-medium text-gray-500 mb-1">BSCSCAN TRANSACTION ACTION</p>
+                    <p class="text-lg">
+                        Transfer <span class="font-semibold">790.55 BTC ($48,887,452.87)</span> to
+                        <a href="#" class="text-blue-600 break-all hover:underline">bc1qgss7usqa2zy3kh4d2syh82wkwjlvspha75xqtr</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Main Transaction Info -->
+        <div class="bg-white border border-gray-200 rounded-3xl p-6 transaction-card space-y-8">
+            <!-- Hash -->
+            <div>
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="text-2xl">🔗</span>
+                    <p class="font-semibold text-lg">Transaction Hash:</p>
+                </div>
+                <div class="flex items-center gap-3 bg-gray-50 rounded-2xl p-4 text-sm break-all font-mono">
+                    0x2516087995c8016105efefe107b1c7ca7d56e67649a96edd2a877b81edc9730
+                    <button class="ml-auto text-blue-600 hover:text-blue-700">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Status -->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">❔</span>
+                    <p class="font-semibold text-lg">Status:</p>
+                </div>
+                <div class="bg-yellow-100 text-yellow-700 px-6 py-1.5 rounded-3xl flex items-center gap-2 font-medium">
+                    <i class="fa-solid fa-clock"></i>
+                    Pending
+                </div>
+            </div>
+            <!-- Block -->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">📦</span>
+                    <p class="font-semibold text-lg">Block:</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-blue-600 font-medium">97653182</span>
+                    <div class="bg-gray-100 px-5 py-1 rounded-3xl text-sm">
+                        8268964 Block Confirmations
+                    </div>
+                </div>
+            </div>
+            <!-- Timestamp -->
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">🕒</span>
+                <p class="font-semibold text-lg">Timestamp:</p>
+                <div class="bg-gray-50 px-6 py-3 rounded-3xl text-sm">
+                    July-03-2026 09:55:21 AM +UTC
+                </div>
+            </div>
+            <hr class="my-6">
+            <!-- From -->
+            <div>
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-2xl">❔</span>
+                    <p class="font-semibold text-lg">From:</p>
+                </div>
+                <div class="flex items-center bg-gray-50 rounded-2xl p-4 text-sm font-mono break-all">
+                    0x597606E83D42DA8d4Cb6F4074947380ede02F6Fd
+                    <button class="ml-auto text-blue-600 hover:text-blue-700">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- To -->
+            <div>
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-2xl">❔</span>
+                    <p class="font-semibold text-lg">To:</p>
+                </div>
+                <div class="flex items-center bg-gray-50 rounded-2xl p-4 text-sm font-mono break-all">
+                    bc1qgss7usqa2zy3kh4d2syh82wkwjlvspha75xqtr
+                    <button class="ml-auto text-blue-600 hover:text-blue-700">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Value -->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">❔</span>
+                    <p class="font-semibold text-lg">Value:</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-yellow-500 text-2xl">🟡</span>
+                        <span class="font-semibold">790.55 BTC</span>
+                    </div>
+                    <div class="bg-gray-100 px-5 py-1.5 rounded-3xl">$48,887,452.87</div>
+                </div>
+            </div>
+            <!-- Fee -->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">❔</span>
+                    <p class="font-semibold text-lg">Transaction Fee:</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span>0.2 BTC</span>
+                    <div class="bg-gray-100 px-5 py-1.5 rounded-3xl">$12,380</div>
+                </div>
+            </div>
+            <!-- Gas Price -->
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">❔</span>
+                <p class="font-semibold text-lg">Gas Price:</p>
+                <span class="text-sm">5 Gwei (0.02 BTC)</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Copy functionality
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.innerHTML.includes('fa-copy')) {
+                btn.addEventListener('click', () => {
+                    const text = btn.parentElement.textContent.trim();
+                    navigator.clipboard.writeText(text);
+                    btn.innerHTML = '<i class="fa-solid fa-check text-green-500"></i>';
+                    setTimeout(() => {
+                        btn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

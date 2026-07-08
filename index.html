@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-           
+          
             <div class="flex-1 max-w-xl mx-8">
                 <div class="relative">
                     <input type="text"
@@ -47,6 +47,7 @@
             </div>
         </div>
     </nav>
+
     <div class="max-w-4xl mx-auto px-4 py-6">
         <!-- Title -->
         <div class="flex items-center justify-between mb-6">
@@ -60,12 +61,14 @@
                 </button>
             </div>
         </div>
+
         <!-- Category Tabs -->
         <div class="flex gap-2 mb-6">
             <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium">Prediction</button>
             <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium">Play</button>
             <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium">Gaming</button>
         </div>
+
         <!-- Sponsored -->
         <div class="bg-white border border-gray-200 rounded-2xl p-4 mb-6 flex items-center gap-4">
             <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-2xl">🎮</div>
@@ -74,11 +77,12 @@
                 <p class="text-blue-600 text-sm">Dividends! <span class="font-semibold">Sign Up & Win Up to 5 BTC</span></p>
             </div>
         </div>
+
         <!-- Overview Tabs -->
         <div class="flex items-center gap-4 mb-6 border-b pb-4">
             <button class="bg-blue-600 text-white px-8 py-2 rounded-2xl font-medium">Overview</button>
             <button class="px-8 py-2 text-gray-600 hover:bg-gray-100 rounded-2xl">State</button>
-           
+          
             <div class="ml-auto flex items-center gap-3">
                 <button class="flex items-center gap-2 px-5 py-2 border border-gray-300 rounded-2xl text-sm">
                     <i class="fa-solid fa-code"></i>
@@ -89,6 +93,7 @@
                 </button>
             </div>
         </div>
+
         <!-- Transaction Action -->
         <div class="bg-white border border-gray-200 rounded-3xl p-6 mb-6">
             <div class="flex items-start gap-3">
@@ -102,6 +107,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Main Transaction Info -->
         <div class="bg-white border border-gray-200 rounded-3xl p-6 transaction-card space-y-8">
             <!-- Hash -->
@@ -117,17 +123,19 @@
                     </button>
                 </div>
             </div>
-            <!-- Status -->
+
+            <!-- Status - CANCELLED -->
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <span class="text-2xl">🛑</span>
+                    <span class="text-2xl">❌</span>
                     <p class="font-semibold text-lg">Status:</p>
                 </div>
-                <div class="bg-yellow-100 text-yellow-700 px-6 py-1.5 rounded-3xl flex items-center gap-2 font-medium">
-                    <i class="fa-solid fa-clock"></i>
-                    Cancel
+                <div class="bg-red-100 text-red-700 px-6 py-1.5 rounded-3xl flex items-center gap-2 font-medium">
+                    <i class="fa-solid fa-ban"></i>
+                    Cancelled
                 </div>
             </div>
+
             <!-- Block -->
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
@@ -141,6 +149,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Timestamp -->
             <div class="flex items-center gap-3">
                 <span class="text-2xl">🕒</span>
@@ -149,7 +158,9 @@
                     July-03-2026 09:55:21 AM +UTC
                 </div>
             </div>
+
             <hr class="my-6">
+
             <!-- From -->
             <div>
                 <div class="flex items-center gap-3 mb-3">
@@ -163,6 +174,7 @@
                     </button>
                 </div>
             </div>
+
             <!-- To -->
             <div>
                 <div class="flex items-center gap-3 mb-3">
@@ -176,6 +188,7 @@
                     </button>
                 </div>
             </div>
+
             <!-- Value -->
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
@@ -190,6 +203,7 @@
                     <div class="bg-gray-100 px-5 py-1.5 rounded-3xl">$48,887,452.87</div>
                 </div>
             </div>
+
             <!-- Fee -->
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
@@ -201,6 +215,7 @@
                     <div class="bg-gray-100 px-5 py-1.5 rounded-3xl">$12,380</div>
                 </div>
             </div>
+
             <!-- Gas Price -->
             <div class="flex items-center gap-3">
                 <span class="text-2xl">❔</span>
@@ -209,6 +224,7 @@
             </div>
         </div>
     </div>
+
     <script>
         // Copy functionality
         document.querySelectorAll('button').forEach(btn => {
